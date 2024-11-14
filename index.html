@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Камень, ножницы, бумага</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1 id="game-title">Камень, ножницы, бумага</h1>
+        <div id="scoreboard">
+            Ваш счет: <span id="score">0</span>
+        </div>
+        <div id="game">
+            <img src="rock.png" id="rock" alt="Камень" class="game-btn">
+            <img src="paper.png" id="paper" alt="Бумага" class="game-btn">
+            <img src="scissors.png" id="scissors" alt="Ножницы" class="game-btn">
+        </div>
+        <div id="result">
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
