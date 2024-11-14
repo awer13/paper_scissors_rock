@@ -1,0 +1,115 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "player",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "playerMove",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "opponentMove",
+				"type": "uint8"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "result",
+				"type": "string"
+			}
+		],
+		"name": "GamePlayed",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "_playerMove",
+				"type": "uint8"
+			}
+		],
+		"name": "play",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "gameHistory",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "player",
+				"type": "address"
+			},
+			{
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "playerMove",
+				"type": "uint8"
+			},
+			{
+				"internalType": "enum RockPaperScissors.Move",
+				"name": "opponentMove",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "result",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getHistory",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"internalType": "enum RockPaperScissors.Move",
+						"name": "playerMove",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum RockPaperScissors.Move",
+						"name": "opponentMove",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "result",
+						"type": "string"
+					}
+				],
+				"internalType": "struct RockPaperScissors.Game[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
