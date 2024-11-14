@@ -1,0 +1,78 @@
+/* Фон и стили основного контейнера */
+body {
+    background-image: url('fon.webp'); /* Замените на путь к изображению фона */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Центрирование основного контейнера */
+#game-container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Название игры */
+#game-title {
+    font-size: 2.5em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Счетчик */
+#scoreboard {
+    font-size: 1.5em;
+    color: #888;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: rgba(230, 230, 230, 0.6);
+    border-radius: 8px;
+}
+
+/* Контейнер для кнопок */
+#game {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Стили для кнопок (камень, ножницы, бумага) */
+.game-btn {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    border-radius: 50%;
+}
+
+/* Эффект при наведении */
+.game-btn:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.game-btn:active {
+    transform: scale(0.9);
+}
+
+/* Стиль конфетти */
+.confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(200, 200, 200, 0.8);
+    border-radius: 50%;
+    animation: confettiAnimation 2s linear infinite;
+}
+
+@keyframes confettiAnimation {
+    0% { transform: translateY(-50px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(300px) rotate(360deg); opacity: 0; }
+}
